@@ -8,3 +8,7 @@ app.listen(8080, function () {
 app.get('/abc', function (req, res) {
   res.send('Welcome to ABC World!');
 });
+
+app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/index.html');
+});
